@@ -1238,6 +1238,8 @@ static activity_reason_info can_do_activity_there( const activity_id &act, Chara
         const item_filter filter = [ &you ]( const item & i ) {
             // Check well lit after
             read_condition_result condition = you.check_read_condition( i );
+            // TODO: & instad of == since multiple conditions can be set
+            // TODO: fix https://github.com/CleverRaven/Cataclysm-DDA/issues/75562
             return condition == read_condition_result::SUCCESS ||
                    condition == read_condition_result::TOO_DARK;
         };
