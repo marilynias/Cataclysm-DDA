@@ -2,7 +2,7 @@
   {
     "type": "item_group",
     "id": "christmas_all_clothing",
-    "//": "mainly used for places for general clothing (like a dresser or a clothing store warehouse)",
+    "//": "irgendwas",
     "subtype": "distribution",
     "entries": [
       { "group": "christmas_coats_unisex", "prob": 25 },
